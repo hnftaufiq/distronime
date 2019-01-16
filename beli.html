@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BELI  ||  ANIMEDISTRO</title>
+  <link href="logo.jpg" rel="shortcut icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="indexcss1.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="50">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="profil.html">ANIMEDISTRO.COM</a>
+    </div>
+  <div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+    <li  class="active"><a href="profil.html">Profil</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle= "dropdown" href="#">Kategori Produk
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="kaos.html">Kaos Anime</a></li>
+          <li><a href="lain.html">Lain - Lain</a></li>
+        </ul>
+      </li>
+      <li><a href="info.html">Info Kontak</a></li>
+  </ul>
+  <ul class="nav navbar-nav navbar-right">
+  <li><a href="sign.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    <li><a href="sign.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+  <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="button" class="btn btn-info">
+          <span class="glyphicon glyphicon-search"></span>
+      </button>
+  </form>
+  </ul>
+   </div>
+  </div>
+</nav>
+<div class="row">
+  <div class="col-md-12">
+    <div class="profil">
+      <h1>FORM PEMBELIAN</h1> 
+      <h3>!! PERHATIAN !!</h3>
+      <h4>Isi form di bawah dengan data yang benar. Kesalahan yang di akibatkan karena kesalahan pengisian data bukan tanggung jawab kami.</h4>
+      <h4>Total pembayaran dan data belanja akan dikirimkan ke e-mail untuk dikonfirmasi</h4>
+    <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="name">Nama Pembeli</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="tlp">No Telepon/ Handphone</label>
+        <input type="text" class="form-control" id="tlp">
+      </div>
+      <div class="form-group">
+        <label for="comment">Alamat Lengkap</label>
+        <textarea class="form-control" rows="3" id="comment" style="width:500px;resize: none;"></textarea>
+      </div>
+      <button type="button" class="btn btn-warning btn-lg" style = "float:right" data-toggle="modal" data-target="#myModal">BUY</button>
+      <a href="index.html"<button type="button" class="btn btn-danger btn-lg" style = "float:left;">BACK</button></a>
+    </div>
+    <div class="col-md-6">
+      <label for="jasa">Pilih Jasa Kurir</label>
+      <ul class="nav nav-tabs" style="width: 250px">
+        <li><a data-toggle="tab" href="#menu1">JNE</a></li>
+        <li><a data-toggle="tab" href="#menu2">TIKI</a></li>
+        <li><a data-toggle="tab" href="#menu3">J&T</a></li>
+      </ul>
+
+    <div class="tab-content">
+      <div id="menu1" class="tab-pane fade">
+        <h3>JNE</h3>
+          <div class="radio">
+            <label><input type="radio" name="optradio">JNE REG (1-2 HARI KERJA)</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio">JNE YES (1 HARI KERJA)</label>
+          </div>
+      </div>
+      <div id="menu2" class="tab-pane fade">
+        <h3>TIKI</h3>
+          <div class="radio">
+            <label><input type="radio" name="optradio">TIKI REGULER (7 HARI KERJA)</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio">TIKI TDS (2 HARI KERJA)</label>
+          </div>
+      </div>
+      <div id="menu3" class="tab-pane fade">
+        <h3>J&T</h3>
+          <div class="radio">
+            <label><input type="radio" name="optradio">J&T EZ (4-7 HARI KERJA)</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio">J&T (7 HARI KERJA)</label>
+          </div>
+      </div>
+    </div>
+    <div class="form-group">
+        <label for="JML">JUMLAH PEMBELIAN</label>
+         <input type="text" class="form-control" id="JML" style="width:50px">
+    </div>
+    <label for="comment">PILIH UKURAN (>1 TULIS DI KETERANGAN)</label>
+    <div class="form-group">
+        <label class="radio-inline"><input type="radio" name="optradio">S (L:46;T:65)</label>
+        <label class="radio-inline"><input type="radio" name="optradio">M (L:48;T:67)</label>
+        <label class="radio-inline"><input type="radio" name="optradio">L (L:50);T:69)</label>
+        <label class="radio-inline"><input type="radio" name="optradio">XL (L:52);T:71)</label>
+    </div>
+    <div class="form-group">
+        <label for="comment">Keterangan Tambahan</label>
+        <textarea class="form-control" rows="3" id="comment" style="width:500px;resize: none;"></textarea>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+  </div>
+<footer class="section footer-classic context-dark bg-image">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <div class="logo"><img class="img-rounded" src="logo.jpg" alt="" style="float:center;width:270x;height:150px">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h5>INFO KONTAK</h5>
+              <dl class="contact-list">
+                <dt>ALAMAT:</dt>
+                <dd>JL. IMAM BONJOL No.27 SEMARANG</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>EMAIL:</dt>
+                <dd><a href="mailto:#">DISTRO-ANIME@gmail.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>NO HP:</dt>
+                <dd><a href="tel:#">+62 85123456</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="col-md-4">
+              <h5>SOSIAL MEDIA</h5>
+              <dl class="contact-list">
+                <dt>INSTAGRAM:</dt>
+                <dd>ANIME_DISTRO</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>FACEBOOK:</dt>
+                <dd>DISTRONIMEOFFICIAL</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>TWITTER :</dt>
+                <dd>@DISTRONIME</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+</footer>
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="text-align: center;">PEMBERITAHUAN</h4>
+      </div>
+      <div class="alert alert-warning">
+        <center><strong>~TERIMA KASIH~</strong> SEGERA KONFIRMASI DATA DAN PEMBAYARAN DI E-MAIL ANDA</center>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+    </div>
+    </div>
+</body>
+</html>
